@@ -61,3 +61,27 @@ body {
 span {
     color: #7F56DA;
 }
+
+@media (max-width: 750px){
+    body{
+        width: 100%;
+    }
+
+    body .dictionnaireApp{
+        width: 90%;
+    }
+
+    #searchBar{
+        width: 100%;
+    }
+
+    #searchBar input {
+    width: calc(100% - 100px);
+    }
+
+    #searchBar button {
+        width: 95px;
+    }
+
+
+}

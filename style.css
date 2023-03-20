@@ -40,3 +40,15 @@ body {
      cursor: pointer;
     padding: 20PX 0;
 }
+
+.res {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 6px;
+    word-break: break-word;
+    line-height: 30px;
+    animation: animation 0.5s ease-out;
+    transition: 0.5s;
+ }

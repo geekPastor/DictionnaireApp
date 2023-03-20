@@ -6,16 +6,16 @@ function search(){
     if (word.length != 0) {
         let url = "https://api.dictionaryapi.dev/api/v2/entries/en/" + word;
 
-        fetch(url).then(Response =>{
-            Response.json.then(data =>{
+        fetch(url).then(response =>{
+            response.json().then(data =>{
                 try {
                     
                     for (let words of data) {
-                        let definition = words.meaning[0].definitions[0].definition
+                        let definition = words.meanings[0].definitions[0].definition
                         resultat.innerHTML = "<p class='res'><span>Definition :</span></br>" + definition +"</p>"
                         
                     }
-                } catch (error) {
+                } catch (err) {
                     resultat.innerHTML = "<p class='res'>Aucune definition pour ce mot</p>"
                 }
             })

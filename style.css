@@ -17,3 +17,17 @@ body {
 .dicoApp {
     width: 450px;
 }
+
+#searchBar {
+    background-color:#fff;
+    width: 450px;
+    padding: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+#searchBar input  {
+    width: calc(100% - 100px);
+    padding: 20px;
+    border: 0;
+    outline: 0;
+}

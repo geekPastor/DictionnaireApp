@@ -52,3 +52,12 @@ body {
     animation: animation 0.5s ease-out;
     transition: 0.5s;
  }
+
+ @keyframes animation {
+    from {
+        transform: translateY(100px);
+    }
+}
+span {
+    color: #7F56DA;
+}
